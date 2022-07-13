@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Archivo, sans-serif;
+    color: white;
+}
+
+button {
+    height: 85px;
+    width: 85px;
+    border-radius: 30px;
+    font-size: 1rem;
+    background-color: white;
+    font-family: Archivo, sans-serif;
+    margin: 5px;
+    box-shadow: 5px 7px #888888;
+}
+
+.container {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0, 229, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    border-radius: 15px;
+}
+
+.bottom-container {
+    background-color: lightgrey;
+    width: 300px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}

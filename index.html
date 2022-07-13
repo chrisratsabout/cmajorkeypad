@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C major keypad (Mobile version)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>C major Keypad:</h1>
+    </div>
+<div class="bottom-container">
+    <div class="top row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+    </div>
+
+    <div class="middle row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+    </div>
+
+    <div class="bottom row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+    </div>
+</div>
+
+
+    <script>
+        let buttons = document.querySelectorAll('button');
+
+        for (let button of buttons) {
+            button.addEventListener('mousedown', function () {
+                let buttonInnerHTML = this.innerHTML;
+                playSong(buttonInnerHTML)
+                button.style.backgroundColor = 'rgb(0, 229, 255)'
+            });
+        }
+
+        for (let button of buttons) {
+            button.addEventListener('mouseup', function () {
+                let buttonInnerHTML = this.innerHTML;
+                button.style.backgroundColor = 'white'
+            });
+        }
+
+        function playSong(key) {
+
+            switch (key) {
+                case '9':
+                    let d2 = new Audio('d2.mp3');
+                    d2.play();
+                    break;
+
+                case '8':
+                    let c2 = new Audio('c2.mp3');
+                    c2.play();
+                    break;
+
+                case '7':
+                    let b1 = new Audio('b1.mp3');
+                    b1.play();
+                    break;
+
+                case '6':
+                    let a1 = new Audio('a1.mp3');
+                    a1.play();
+                    break;
+
+                case '5':
+                    let g1 = new Audio('g1.mp3');
+                    g1.play();
+                    break;
+
+                case '4':
+                    let f1 = new Audio('f1.mp3');
+                    f1.play();
+                    break;
+
+                case '3':
+                    let e1 = new Audio('e1.mp3');
+                    e1.play();
+                    break;
+
+                case '2':
+                    let d1 = new Audio('d1.mp3');
+                    d1.play();
+                    break;
+
+                case '1':
+                    let c1 = new Audio('c1.mp3');
+                    c1.play();
+                    break;
+                default:
+            }
+        }
+
+    </script>
+</body>
+
+</html>
